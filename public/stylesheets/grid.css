@@ -1,0 +1,12 @@
+.row{
+	margin-left: : -20px;
+	*zoom: 1;
+    text-align: center;
+}
+
+.row:before,
+.row:after{
+	display: table;
+	line-height: 0;
+	content: "";
+};
