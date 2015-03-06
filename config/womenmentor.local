@@ -1,0 +1,43 @@
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+    ServerName womenmentor.local
+    #Change the below two lines
+    #with the absolute path 
+    #to where you have cloned the repo
+    DocumentRoot /home/deepali/myprojects/womenmentor
+    <Directory /home/deepali/myprojects/womenmentor>
+        #Do not show indexes
+        #Do not follow symlinks
+        Options -Indexes -MultiViews
+        Order allow,deny
+        allow from all
+        <IfModule mod_rewrite.c>
+            Options +FollowSymlinks
+            RewriteEngine on
+
+            # if your app is in a subfolder
+            # RewriteBase /my_app/
+
+            # test string is a valid files
+            RewriteCond %{SCRIPT_FILENAME} !-f
+            # test string is a valid directory
+            RewriteCond %{SCRIPT_FILENAME} !-d
+
+            RewriteRule ^(.*)$   index.php?uri=/$1    [NC,L,QSA]
+            # with QSA flag (query string append),
+            # forces the rewrite engine to append a query string part of the
+            # substitution string to the existing string, instead of replacing it.
+            
+        </IfModule>
+
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/merchandise.error.log
+
+    # Possible values include: debug, info, notice, warn, error, crit,
+    # alert, emerg.
+    LogLevel warn
+
+    CustomLog ${APACHE_LOG_DIR}/merchandise.access.log combined
+
+</VirtualHost>
