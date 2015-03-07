@@ -46,6 +46,7 @@ dispatch_post('/update_user',array($cont_ob,'update_user'));
 dispatch('/questionnaire/:id',array($cont_ob,'questionnaire'));
 dispatch('/make_list/:gid',array($cont_ob,'make_list'));
 dispatch('/list',array($cont_ob,'task_list'));
+dispatch_post('/submit_questionnaire/:gid',array($cont_ob,'submit_questionnaire'));
 
 /*Starting application*/
 run();

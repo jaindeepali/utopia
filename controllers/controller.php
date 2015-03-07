@@ -138,5 +138,11 @@
 			return render('questionnaire.php');
 		}
 
+		public function submit_questionnaire($gid)
+		{
+			$ob = new model();
+			$ob->add_ques($gid, $_POST);
+		}
+
 	}
 ?>

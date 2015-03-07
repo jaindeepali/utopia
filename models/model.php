@@ -153,7 +153,6 @@
 			global $loggedInUser;
 			$time = time();
 			$sql = "INSERT INTO goal (description, deadline, uid, created_at) VALUES ('".$goal['description']."', ".$goal['deadline'].", $loggedInUser, $time)";
-			//$sql = "";
 			$result = mysqli_query($link, $sql);
 			if(!$result)
 			{
@@ -164,8 +163,28 @@
 			}
 		}
 
-		public function delete_goal($gid){
+		public function add_ques($gid, $ques){
+			global $link;
+			$date = time();
+			$count = 0;
+			$fields = "`gid` = $gid, `date` = $date, ";
 
+			foreach($ques as $col => $val) {
+				if ($count++ != 0) $fields .= ', ';
+				$col = mysql_escape_string($col);
+				$val = mysql_escape_string($val);
+				$fields .= "`$col` = '$val'";
+			}
+
+			$sql = "INSERT INTO questionnaire SET $fields";
+			$result = mysqli_query($link, $sql);
+			if(!$result)
+			{
+				echo "Could not run query successfully.".mysqli_error($link);
+			}
+			else{
+				header("Location:/goal/".$gid);
+			}
 		}
 	}
 ?>

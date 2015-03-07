@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 08, 2015 at 02:22 AM
+-- Generation Time: Mar 08, 2015 at 03:50 AM
 -- Server version: 5.5.34-0ubuntu0.13.04.1
 -- PHP Version: 5.4.9-4ubuntu2.4
 
@@ -51,7 +51,7 @@ INSERT INTO `goal` (`gid`, `description`, `deadline`, `uid`, `created_at`) VALUE
 --
 
 CREATE TABLE IF NOT EXISTS `questionnaire` (
-  `qid` int(11) NOT NULL,
+  `qid` int(11) NOT NULL AUTO_INCREMENT,
   `gid` int(11) NOT NULL,
   `date` int(11) NOT NULL,
   `work_summary` varchar(300) NOT NULL,
@@ -60,8 +60,16 @@ CREATE TABLE IF NOT EXISTS `questionnaire` (
   `goal_change` tinyint(1) NOT NULL,
   `approach_change` tinyint(1) NOT NULL,
   `purpose_reminder` varchar(300) NOT NULL,
-  `next_time_day` int(11) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `time_next_day` int(11) NOT NULL,
+  PRIMARY KEY (`qid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+
+--
+-- Dumping data for table `questionnaire`
+--
+
+INSERT INTO `questionnaire` (`qid`, `gid`, `date`, `work_summary`, `time_spent`, `gauge_effort`, `goal_change`, `approach_change`, `purpose_reminder`, `time_next_day`) VALUES
+(1, 1, 1425766797, 'a', 1, 1, 1, 1, 'qw', 12);
 
 -- --------------------------------------------------------
 
@@ -77,7 +85,14 @@ CREATE TABLE IF NOT EXISTS `task` (
   `description` varchar(300) NOT NULL,
   `done` tinyint(1) NOT NULL,
   PRIMARY KEY (`tid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
+
+--
+-- Dumping data for table `task`
+--
+
+INSERT INTO `task` (`tid`, `gid`, `date`, `created_at`, `description`, `done`) VALUES
+(1, 1, 1425736880, 1425736880, 'new task', 1);
 
 -- --------------------------------------------------------
 
