@@ -94,6 +94,20 @@
 			}
 		}
 
+		public function new_goal()
+		{
+			return render('add_goal.php');
+		}
+
+		public function add_goal()
+		{
+			$goal = array();
+			$goal['description'] = mysql_escape_string($_POST['description']);
+			$goal['deadline'] = mysql_escape_string(strtotime($_POST['deadline']));
+			$ob = new model();
+			$ob->add_goal($goal);	
+		}
+
 		public function validate_user()
 		{
 			$email = mysql_escape_string($_POST['email']);

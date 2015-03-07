@@ -40,6 +40,8 @@ dispatch('/myprofile',array($cont_ob,'view_profile'));
 dispatch('/edit_profile',array($cont_ob,'edit_profile'));
 dispatch('/goals',array($cont_ob,'view_goals'));
 dispatch('/goal/:id',array($cont_ob,'view_goal'));
+dispatch('/new_goal',array($cont_ob,'new_goal'));
+dispatch_post('/add_goal',array($cont_ob,'add_goal'));
 dispatch_post('/update_user',array($cont_ob,'update_user'));
 
 /*Starting application*/

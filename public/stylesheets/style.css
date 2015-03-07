@@ -550,3 +550,11 @@ input[type="file"]{
 	position: relative;
 	right: -84.5%;
 }
+
+.short-input {
+	width: 50px;
+}
+
+.long-input {
+	width: 800px;	
+}

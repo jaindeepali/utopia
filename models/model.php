@@ -107,5 +107,25 @@
 				return $data[0];
 			}
 		}
+
+		public function add_goal($goal){
+			global $link;
+			global $loggedInUser;
+			$time = time();
+			$sql = "INSERT INTO goal (description, deadline, uid, created_at) VALUES ('".$goal['description']."', ".$goal['deadline'].", $loggedInUser, $time)";
+			//$sql = "";
+			$result = mysqli_query($link, $sql);
+			if(!$result)
+			{
+				echo "Could not run query successfully.".mysqli_error($link);
+			}
+			else{
+				header("Location:/goals");
+			}
+		}
+
+		public function delete_goal($gid){
+
+		}
 	}
 ?>
