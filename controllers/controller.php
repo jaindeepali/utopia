@@ -116,5 +116,11 @@
 			$ob->validate($email,$pass);
 		}
 
+		public function questionnaire($gid)
+		{
+			set('gid',$gid);
+			return render('questionnaire.php');
+		}
+
 	}
 ?>

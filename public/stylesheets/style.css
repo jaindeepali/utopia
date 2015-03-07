@@ -558,3 +558,7 @@ input[type="file"]{
 .long-input {
 	width: 800px;	
 }
+
+.subtitle {
+	font-family: 'Lato_Regular';
+}

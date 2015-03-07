@@ -1,18 +1,14 @@
 <div class="container">
 	<div class="row-fluid header">
-		<h2>My Profile</h2>
+		<h2><?php echo $data['description']; ?></h2>
+		<span class="subtitle">Deadline:</span> <?php echo date("d/m/Y", $data['deadline']); ?>
 	</div>
 	<br/><br/><br/><br/>
 	<div class="row-fluid content">
-		<table class="table table-hover">
-			<tr>
-				<td style="text-align:right">Name:</td>
-				<td style="text-align:left"><?php echo $data['description']; ?></td>
-			</tr>
-			<tr>
-				<td style="text-align:right">Email:</td>
-				<td style="text-align:left"><?php echo $data['deadline']; ?></td>
-			</tr>
-		</table>
+		<h4>To-Do List:</h4>
+		<ul>
+		</ul>
+		<a href="/list/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Make to-do list for tomorrow</button></a>
+		<a href="/questionnaire/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Fill today's questionnaire</button></a><br>
 	</div>
 </div>
