@@ -26,7 +26,7 @@ function not_found()
 {
 	set('title','WomenMentor');
 	layout('layout.php');
-	//return html("not_found.php");
+	return html("not_found.php");
 }
 
 

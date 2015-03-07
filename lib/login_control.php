@@ -8,5 +8,5 @@
 	{
 		echo 'here';
 		$_SESSION['email'] = $email;
-		header('Location:/');
+		header('Location:/myprofile');
 	}

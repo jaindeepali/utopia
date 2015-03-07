@@ -1,34 +1,44 @@
 @font-face {
-	font-family: 'Hero_Light';
+	font-family: 'Lato_Light';
 	font-weight: 300;
-	src: local('Hero_Light'), local('Hero_Light'), url(/fonts/Hero_Light.otf) format('woff');
+	src: local('Lato_Light'), local('Lato_Light'), url(/public/fonts/Lato-Light.ttf) format('woff');
 }
 @font-face {
-	font-family: 'Hero';
+	font-family: 'Lato_Hairline';
+	font-weight: 100;
+	src: local('Lato_Hairline'), local('Lato_Hairline'), url(/public/fonts/Lato-Hairline.ttf) format('woff');
+}
+@font-face {
+	font-family: 'Lato_Regular';
 	font-weight: 300;
-	src: local('Hero'), local('Hero'), url(/fonts/Hero.otf) format('woff');
+	src: local('Lato_Regular'), local('Lato_Regular'), url(/public/fonts/Lato-Regular.ttf) format('woff');
 }
 
 body
 {
 	background-image: url(/public/bg_images/bg_blur.png);
 	background-size: 100% 100%;
-	font-family: "Open Sans","Trebuchet MS", "sans serif";
+	font-family: "Lato_Regular","Trebuchet MS", "sans serif";
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	color: rgba(48, 48, 48, 1);
-	margin-right: 40px;
-	background-color: #ededed;
-	text-shadow: 0 0 2px rgba(151, 151, 151, 0.5);
+	color: #2c3e50;
+	/* margin-right: 40px; */
+	background-color: #ecf0f1;
+	/* text-shadow: 0 0 2px rgba(151, 151, 151, 0.5); */
+	overflow-x: hidden;
 }
 
 ul {
 	list-style: none;
 }
 
-#topbar{
+.topbar{
     position: fixed;
     z-index: 300;
+    padding-left: 1.1%;
+    background-color: #FFF;
+    /* width: 100px; */
+    box-shadow: 0px 0px 5px 1px rgba(34, 9, 3, 0.2);
 }
 
 #holder
@@ -41,7 +51,13 @@ ul {
 {
 	padding-bottom: 50px;
 	margin-left: 0px;
-	width: 95%;
+	width: 91%;
+	margin-right: 0px;
+}
+
+.container-fluid
+{
+	padding: 0px;
 }
 
 #search
@@ -64,13 +80,13 @@ ul {
 	left: 0px;
 	z-index: 55;
 	/* min-width: 150px; */
-	padding-left: 0.5%;
-	padding-top: 7%;
+	/* padding-left: 0.5%; */
+	/* padding-top: 7%; */
 	border-radius: 0px;
-	background-color: rgba(9, 9, 9, 0.81);
+	background-color: #2c3e50;
     height: 100%;
 	position: fixed;
-	top: -55px;
+	top: 60px;
 	font-size: 16px;
 	border-right: 10px rgba(34, 34, 34, 1) solid;
 	box-shadow: 0px 0px 5px 1px rgba(34, 9, 3, 0.2);
@@ -192,14 +208,15 @@ a:hover,a:focus,a:active{
 {
 	/*position: fixed;*/
 	z-index: -1;
-	background-color: rgba(11, 71, 67, 0.7);
-	padding: 3% 8% 3% 3%;
-	margin-bottom: 20px;
+	background-color: #e74c3c;
+	padding: 1% 8% 1% 3%;
+	margin-bottom: 2.5%;
 	margin-left: -3%;
-	margin-top: 4%;
-	color: rgba(11, 29, 28, 1);
-	box-shadow: 0px 0px 5px 1px rgba(34, 9, 3, 0.2);
-	border-bottom: 10px #0E3330 solid;
+	margin-top: 2%;
+	color: rgba(255, 255, 255, 1);
+	/* box-shadow: 0px 0px 5px 1px rgba(34, 9, 3, 0.2); */
+	border-bottom: 10px #c0392b solid;
+	font-family: Lato_Light;
 }
 
 .banner
@@ -295,7 +312,7 @@ hr{
 	background-color: rgba(255, 255, 255, 1);
 	margin: -8% 0% 0% -3%;
 	padding: 5% 5.5% 6% 5.5%;
-	box-shadow: 0px 0px 5px 1px rgba(34, 9, 3, 0.2);
+	/* box-shadow: 0px 0px 5px 1px rgba(34, 9, 3, 0.2); */
 }
 
 input[type="file"]{
@@ -353,7 +370,7 @@ input[type="file"]{
 .wrapper-dropdown-2 a {
 	display: block;
     
-	color: #7A7A7A;
+	color: #C0C0C0;
     
 	border-top: 1px #525252 solid;
 	border-left: 5px solid;
@@ -516,4 +533,19 @@ input[type="file"]{
 
 .acc_list {
 	
+}
+
+.row-fluid {
+	/* width: auto; */
+}
+
+.main-container {
+    top: 60px;
+	
+    position: relative;
+}
+
+.login-btn {
+	position: relative;
+	right: -84.5%;
 }

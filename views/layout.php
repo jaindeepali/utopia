@@ -1,3 +1,6 @@
+<?php 
+global $loggedInUser;
+?>
 <!doctype html>
 	<head>
 		<meta charset="utf-8">
@@ -15,15 +18,27 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row-fluid">
-			<div class="span1">
-				<ul class="nav">
-					<li><div class="wrapper-dropdown-2"><a href="/"><i class="fa fa-home fa-lg"></i></a></div></li>
-				</ul>
+			<div class="row-fluid topbar">
+				LOGO
+				<span class = 'login-btn'>
+					<?php
+					if(!$loggedInUser):
+					?>
+					<a href = "/login"><button class="btn" style="height: 40px;">SignIn/SignUp</button></a>
+					<?php else: ?>
+					<a href = "/logout"><button class="btn" style="height: 40px;">Logout</button></a>
+					<?php endif; ?>
+				</span>
 			</div>
-			<div class="span11">
-				<?php echo $content; ?>
-			</div>
+			<div class="row-fluid main-container">
+				<div class="span1">
+					<ul class="nav">
+						<li><div class="wrapper-dropdown-2"><a href="/"><i class="fa fa-home fa-lg"></i></a></div></li>
+					</ul>
+				</div>
+				<div class="span11">
+					<?php echo $content; ?>
+				</div>
 			</div>
 			<a href="#" class="go-top"><i class="fa fa-angle-up fa-3x"></i></a>
 		</div>
