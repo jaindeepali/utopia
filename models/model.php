@@ -87,5 +87,25 @@
 				return $data;
 			}
 		}
+
+		public function get_goal($gid){
+			global $link;
+			$sql = "SELECT * FROM goal WHERE gid = $gid";
+			$result = mysqli_query($link, $sql);
+			if(!$result)
+			{
+				echo "Could not run query successfully.".mysqli_error($link);
+			}
+			else{
+				$data = array();
+				$i = 0;
+				while($row = mysqli_fetch_assoc($result))
+				{
+					$data[$i] = $row;
+					$i++;
+				}
+				return $data[0];
+			}
+		}
 	}
 ?>

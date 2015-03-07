@@ -80,6 +80,20 @@
 			}
 		}
 
+		public function view_goal($gid)
+		{
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				$ob = new model();
+				$data = $ob->get_goal($gid);
+				set('data',$data);
+				return render('goal.php');
+			}
+		}
+
 		public function validate_user()
 		{
 			$email = mysql_escape_string($_POST['email']);
