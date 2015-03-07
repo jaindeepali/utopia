@@ -21,6 +21,13 @@
 			}
 		}
 
+		public function logout()
+		{
+			session_unset();
+			session_destroy();
+			header('Location:/');
+		}
+
 		public function view_profile()
 		{
 			global $loggedInUser;
@@ -28,6 +35,8 @@
 				header('Location:/login');
 			}
 			else{
+				set('email','djdeepalijain811@gmail.com');
+				set('name','Deepali Jain');
 				return render('view_profile.php');
 			}
 		}
@@ -37,11 +46,18 @@
 
 		}
 
-		public function logout()
+		public function view_goals()
 		{
-			session_unset();
-			session_destroy();
-			header('Location:/');
+
 		}
+
+		public function validate_user()
+		{
+			$email = $_POST['email'];
+			$pass = $_POST['pass'];
+			$ob = new model();
+			$ob->validate($email,$pass);
+		}
+
 	}
 ?>

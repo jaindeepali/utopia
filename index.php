@@ -34,8 +34,11 @@ function not_found()
 
 dispatch('/',array($cont_ob,'home'));
 dispatch('/login',array($cont_ob,'login'));
+dispatch_post('/validate',array($cont_ob,'validate_user'));
 dispatch('/logout',array($cont_ob,'logout'));
 dispatch('/myprofile',array($cont_ob,'view_profile'));
+dispatch('/edit_profile',array($cont_ob,'edit_profile'));
+dispatch('/goals',array($cont_ob,'view_goals'));
 
 /*Starting application*/
 run();

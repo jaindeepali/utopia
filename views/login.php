@@ -4,7 +4,7 @@
 	</div>
 	<br/><br/><br/><br/>
 	<div class="row-fluid content">
-		<form class="form-horizontal" action="/lib/login_control.php" method="post" enctype="multipart/form-data">
+		<form class="form-horizontal" action="/validate" method="post" enctype="multipart/form-data">
 			<div class="control-group">
 				<label class="control-label" for="email">Email:</label>
 				<div class="controls">

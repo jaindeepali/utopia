@@ -303,6 +303,7 @@ hr{
 .table th, .table td{
 	text-align: center;
 	border-top-color: rgba(136, 156, 155, 1);
+	border-bottom: solid 1px rgba(136, 156, 155, 1);
 }
 
 .zoom-container{
