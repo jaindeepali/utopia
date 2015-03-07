@@ -8,5 +8,16 @@
 		{
 			return render('home.php');
 		}
+
+		public function login()
+		{
+			return render('login.php');
+		}
+
+		public function logout()
+		{
+			session_unset();
+			session_destroy();
+		}
 	}
 ?>

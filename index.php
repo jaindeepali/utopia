@@ -33,8 +33,8 @@ function not_found()
 /*Routes: */
 
 dispatch('/',array($cont_ob,'home'));
-
-
+dispatch('/login',array($cont_ob,'login'));
+dispatch('/logout',array($cont_ob,'logout'));
 
 /*Starting application*/
 run();

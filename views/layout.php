@@ -16,12 +16,12 @@
 	<body>
 		<div class="container-fluid">
 			<div class="row-fluid">
-			<div class="span2">
+			<div class="span1">
 				<ul class="nav">
 					<li><div class="wrapper-dropdown-2"><a href="/"><i class="fa fa-home fa-lg"></i></a></div></li>
 				</ul>
 			</div>
-			<div class="span10">
+			<div class="span11">
 				<?php echo $content; ?>
 			</div>
 			</div>

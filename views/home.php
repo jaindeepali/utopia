@@ -1,3 +1,5 @@
-<div>
-HOME
-</div>
+<div>Hello</div>
+<?php
+	global $loggedInUser;
+	echo $loggedInUser;
+?>
