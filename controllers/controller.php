@@ -11,12 +11,25 @@
 
 		public function login()
 		{
-			return render('login.php');
+			global $loggedInUser;
+			if(!$loggedInUser){
+				return render('login.php');
+			}
+			else{
+				set('msg','You are already signed in.');
+				return render('error.php');
+			}
 		}
 
 		public function view_profile()
 		{
-			return render('view_profile.php');
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				return render('view_profile.php');
+			}
 		}
 
 		public function edit_profile()

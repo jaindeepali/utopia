@@ -35,6 +35,7 @@ function not_found()
 dispatch('/',array($cont_ob,'home'));
 dispatch('/login',array($cont_ob,'login'));
 dispatch('/logout',array($cont_ob,'logout'));
+dispatch('/myprofile',array($cont_ob,'view_profile'));
 
 /*Starting application*/
 run();

@@ -34,6 +34,7 @@ global $loggedInUser;
 				<div class="span1">
 					<ul class="nav">
 						<li><div class="wrapper-dropdown-2"><a href="/"><i class="fa fa-home fa-lg"></i></a></div></li>
+						<li><div class="wrapper-dropdown-2"><a href="/myprofile"><i class="fa fa-user fa-lg"></i></a></div></li>
 					</ul>
 				</div>
 				<div class="span11">
