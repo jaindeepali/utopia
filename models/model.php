@@ -108,6 +108,26 @@
 			}
 		}
 
+		public function get_tasks($gid){
+			global $link;
+			$sql = "SELECT * FROM task WHERE gid = $gid";
+			$result = mysqli_query($link, $sql);
+			if(!$result)
+			{
+				echo "Could not run query successfully.".mysqli_error($link);
+			}
+			else{
+				$data = array();
+				$i = 0;
+				while($row = mysqli_fetch_assoc($result))
+				{
+					$data[$i] = $row;
+					$i++;
+				}
+				return $data;
+			}
+		}
+
 		public function add_goal($goal){
 			global $link;
 			global $loggedInUser;

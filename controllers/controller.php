@@ -89,7 +89,9 @@
 			else{
 				$ob = new model();
 				$data = $ob->get_goal($gid);
+				$tasks = $ob->get_tasks($gid);
 				set('data',$data);
+				set('tasks',$tasks);
 				return render('goal.php');
 			}
 		}
