@@ -89,10 +89,24 @@
 			else{
 				$ob = new model();
 				$data = $ob->get_goal($gid);
-				$tasks = $ob->get_tasks($gid);
+				$tasks = $ob->get_tasks_by_gid($gid);
 				set('data',$data);
 				set('tasks',$tasks);
 				return render('goal.php');
+			}
+		}
+
+		public function task_list()
+		{
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				$ob = new model();
+				$tasks = $ob->get_tasks_by_uid($loggedInUser);
+				set('tasks',$tasks);
+				return render('list.php');
 			}
 		}
 

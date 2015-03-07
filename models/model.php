@@ -108,9 +108,29 @@
 			}
 		}
 
-		public function get_tasks($gid){
+		public function get_tasks_by_gid($gid){
 			global $link;
 			$sql = "SELECT * FROM task WHERE gid = $gid";
+			$result = mysqli_query($link, $sql);
+			if(!$result)
+			{
+				echo "Could not run query successfully.".mysqli_error($link);
+			}
+			else{
+				$data = array();
+				$i = 0;
+				while($row = mysqli_fetch_assoc($result))
+				{
+					$data[$i] = $row;
+					$i++;
+				}
+				return $data;
+			}
+		}
+
+		public function get_tasks_by_uid($uid){
+			global $link;
+			$sql = "SELECT tid,goal.gid,date,task.description as tdesc,done,goal.description as gdesc FROM task, goal WHERE goal.gid = task.gid AND goal.uid = $uid";
 			$result = mysqli_query($link, $sql);
 			if(!$result)
 			{
