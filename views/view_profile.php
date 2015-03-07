@@ -7,11 +7,11 @@
 		<table class="table table-hover">
 			<tr>
 				<td style="text-align:right">Name:</td>
-				<td style="text-align:left"><?php echo $name; ?></td>
+				<td style="text-align:left"><?php echo $data['name']; ?></td>
 			</tr>
 			<tr>
 				<td style="text-align:right">Email:</td>
-				<td style="text-align:left"><?php echo $email; ?></td>
+				<td style="text-align:left"><?php echo $data['email']; ?></td>
 			</tr>
 		</table>
 		<a href="/edit_profile"><button class="btn"style="height: 40px;">Edit</button></a>

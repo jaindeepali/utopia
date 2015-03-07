@@ -302,8 +302,8 @@ hr{
 
 .table th, .table td{
 	text-align: center;
-	border-top-color: rgba(136, 156, 155, 1);
-	border-bottom: solid 1px rgba(136, 156, 155, 1);
+	border-top-color: rgba(232, 232, 232, 1);
+	border-bottom: solid 1px rgba(197, 197, 197, 1);
 }
 
 .zoom-container{
@@ -374,7 +374,7 @@ input[type="file"]{
 	color: #C0C0C0;
     
 	border-top: 1px #525252 solid;
-	border-left: 5px solid;
+	border-left: 3px solid;
     padding: 10px;
 	text-shadow: none;
 }
@@ -444,7 +444,7 @@ input[type="file"]{
 
 .table-hover tbody tr:hover > td,
 .table-hover tbody tr:hover > th {
-  background-color: rgba(30, 109, 104, 0.38);
+  background-color: rgba(247, 247, 247, 1);
 }
 
 .notification {

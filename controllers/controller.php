@@ -35,26 +35,55 @@
 				header('Location:/login');
 			}
 			else{
-				set('email','djdeepalijain811@gmail.com');
-				set('name','Deepali Jain');
+				$ob = new model();
+				$data = $ob->get_user($loggedInUser);
+				set('data',$data);
 				return render('view_profile.php');
 			}
 		}
 
 		public function edit_profile()
 		{
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				$ob = new model();
+				$data = $ob->get_user($loggedInUser);
+				set('data',$data);
+				return render('edit_profile.php');
+			}
+		}
 
+		public function update_user()
+		{
+			global $loggedInUser;
+			$user = array();
+			$user['email'] = mysql_escape_string($_POST['email']);
+			$user['name'] = mysql_escape_string($_POST['name']);
+			$ob = new model();
+			$ob->update_user($loggedInUser, $user);
 		}
 
 		public function view_goals()
 		{
-
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				$ob = new model();
+				$data = $ob->get_goals($loggedInUser);
+				set('data',$data);
+				return render('goals.php');
+			}
 		}
 
 		public function validate_user()
 		{
-			$email = $_POST['email'];
-			$pass = $_POST['pass'];
+			$email = mysql_escape_string($_POST['email']);
+			$pass = mysql_escape_string($_POST['pass']);
 			$ob = new model();
 			$ob->validate($email,$pass);
 		}
