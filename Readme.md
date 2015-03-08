@@ -23,7 +23,13 @@ A web app to help you achieve your goals by making you fill an introspective que
 ##Tech. Used
 
 1. PHP MVC framework - Limonade
-2. Frontend - Twitter Bootstrap, jquery, font-awesome, masonry.js, chart.js
+2. Frontend:
+	- Twitter Bootstrap
+	- jquery
+	- font-awesome
+	- masonry.js
+	- chart.js
+	- hint-css
 3. Version control - Git
 
 ##Setup:
