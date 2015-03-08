@@ -18,6 +18,6 @@
 			</tr>
 			<?php endforeach; ?>
 		</table>
-		<a href="/new_goal"><button class="btn"style="height: 40px;"><i class="fa fa-plus"></i> &nbsp;Add</button></a>
+		<center><a href="/new_goal"><button class="btn"style="height: 40px;"><i class="fa fa-plus"></i> &nbsp;Add</button></a></center>
 	</div>
 </div>

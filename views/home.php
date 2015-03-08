@@ -36,6 +36,7 @@
 	<div class="row-fluid content" style="margin-top:-1.5%;text-align:center;">
 		<h4>Staying committed to goals made easy.</h4>
 		<b style="font-size:24px">"</b> &nbsp;&nbsp;Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.&nbsp;&nbsp; <b style="font-size:24px">"</b> &nbsp;&nbsp;&nbsp;&nbsp;- Paul J. Meyer
+		<br>
 		<?php
 			global $loggedInUser;
 			if(!$loggedInUser):

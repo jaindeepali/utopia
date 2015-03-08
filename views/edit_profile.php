@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row-fluid header">
-		<h2>My Profile</h2>
+		<h2>Edit my Profile</h2>
 	</div>
 	<br/><br/><br/><br/>
 	<div class="row-fluid content">
