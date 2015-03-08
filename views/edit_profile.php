@@ -18,6 +18,18 @@
 				</div>
 			</div>
 			<div class="control-group">
+				<label class="control-label" for="occupation">Occupation:</label>
+				<div class="controls">
+					<input type="text" name="occupation" required="required" value="<?php echo $data['occupation']; ?>"><br>
+				</div>
+			</div>
+			<div class="control-group">
+				<label class="control-label" for="interests">Interests (comma separated):</label>
+				<div class="controls">
+					<input type="text" name="interests" required="required" value="<?php echo $data['interests']; ?>"><br>
+				</div>
+			</div>
+			<div class="control-group">
 				<div class="controls">
 					<input class="btn" type="submit" value="Update" style="height: 40px;">
 				</div>

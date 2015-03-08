@@ -62,6 +62,8 @@
 			$user = array();
 			$user['email'] = mysql_escape_string($_POST['email']);
 			$user['name'] = mysql_escape_string($_POST['name']);
+			$user['occupation'] = mysql_escape_string($_POST['occupation']);
+			$user['interests'] = mysql_escape_string($_POST['interests']);
 			$ob = new model();
 			$ob->update_user($loggedInUser, $user);
 		}

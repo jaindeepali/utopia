@@ -13,6 +13,14 @@
 				<td style="text-align:right">Email:</td>
 				<td style="text-align:left"><?php echo $data['email']; ?></td>
 			</tr>
+			<tr>
+				<td style="text-align:right">Occupation:</td>
+				<td style="text-align:left"><?php echo $data['occupation']; ?></td>
+			</tr>
+			<tr>
+				<td style="text-align:right">Interests:</td>
+				<td style="text-align:left"><?php echo $data['interests']; ?></td>
+			</tr>
 		</table>
 		<center><a href="/edit_profile"><button class="btn"style="height: 40px;">Edit</button></a></center>	
 	</div>

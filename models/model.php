@@ -56,7 +56,7 @@
 
 		public function update_user($uid, $user){
 			global $link;
-			$sql = "UPDATE user SET name = '".$user['name']."', email = '".$user['email']."' WHERE uid = $uid";
+			$sql = "UPDATE user SET name = '".$user['name']."', email = '".$user['email']."', occupation = '".$user['occupation']."', interests = '".$user['interests']."' WHERE uid = $uid";
 			$result = mysqli_query($link, $sql);
 			if(!$result)
 			{
