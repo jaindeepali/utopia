@@ -589,3 +589,11 @@ input[type="file"]{
 .hint, [data-hint] {
  display: block;
 }
+
+.tag-list-item {
+	display: inline-block;
+	padding: 10px;
+	background-color: #aaa;
+	border-radius: 0px 50px 50px 0px;
+	margin-right: 10px;
+}

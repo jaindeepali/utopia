@@ -34,13 +34,7 @@ Here (endpoint: /insights) we will analyze your questionnaire responses over tim
 ##Tech. Used
 
 1. PHP MVC framework - Limonade
-2. Frontend:
-	- Twitter Bootstrap
-	- jquery
-	- font-awesome
-	- masonry.js
-	- chart.js
-	- hint-css
+2. Frontend - Twitter Bootstrap, jquery, font-awesome, masonry.js, chart.js, hint-css
 3. Version control - Git
 
 ##Setup:
