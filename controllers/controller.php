@@ -189,7 +189,22 @@
 
 		public function insights()
 		{
-			return render('mystories.php');
+			return render('insights.php');
+		}
+
+		public function recommendations()
+		{
+			return render('recommendations.php');
+		}
+
+		public function about()
+		{
+			return render('about.php');
+		}
+
+		public function contact()
+		{
+			return render('contact.php');
 		}
 	}
 ?>

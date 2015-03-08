@@ -1,6 +1,10 @@
 #Utopia - Web-App for Women's Day hackathon
 
-A web app to help you achieve your goals by making you fill an introspective questionnaire about your goal everyday.
+A web app to help you achieve your goals by making you fill an introspective questionnaire about your goal everyday. We have focused on four areas to help the user increase his productivy and commit to long term goals.
+1. Motivation
+2. Planning and Introspection
+3. Analysis and Self assessment
+4. Insights on user's performance
 
 ##Features:
 

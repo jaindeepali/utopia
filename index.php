@@ -54,6 +54,9 @@ dispatch('/story/:sid',array($cont_ob,'story'));
 dispatch('/mystories',array($cont_ob,'mystories'));
 dispatch('/post_story',array($cont_ob,'post_story'));
 dispatch('/insights',array($cont_ob,'insights'));
+dispatch('/about',array($cont_ob,'about'));
+dispatch('/contact',array($cont_ob,'contact'));
+dispatch('/recommendations',array($cont_ob,'recommendations'));
 
 
 /*Starting application*/
