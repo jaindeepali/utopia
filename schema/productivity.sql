@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 08, 2015 at 03:50 AM
+-- Generation Time: Mar 08, 2015 at 06:37 AM
 -- Server version: 5.5.34-0ubuntu0.13.04.1
 -- PHP Version: 5.4.9-4ubuntu2.4
 
@@ -33,16 +33,7 @@ CREATE TABLE IF NOT EXISTS `goal` (
   `uid` int(11) NOT NULL,
   `created_at` int(11) NOT NULL,
   PRIMARY KEY (`gid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
-
---
--- Dumping data for table `goal`
---
-
-INSERT INTO `goal` (`gid`, `description`, `deadline`, `uid`, `created_at`) VALUES
-(1, 'demo', 1425736880, 3, 1425736880),
-(2, 'demo', 1425736880, 3, 1425736880),
-(3, 'new goal', 1448994600, 3, 1425742683);
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -64,13 +55,6 @@ CREATE TABLE IF NOT EXISTS `questionnaire` (
   PRIMARY KEY (`qid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
 
---
--- Dumping data for table `questionnaire`
---
-
-INSERT INTO `questionnaire` (`qid`, `gid`, `date`, `work_summary`, `time_spent`, `gauge_effort`, `goal_change`, `approach_change`, `purpose_reminder`, `time_next_day`) VALUES
-(1, 1, 1425766797, 'a', 1, 1, 1, 1, 'qw', 12);
-
 -- --------------------------------------------------------
 
 --
@@ -85,14 +69,7 @@ CREATE TABLE IF NOT EXISTS `task` (
   `description` varchar(300) NOT NULL,
   `done` tinyint(1) NOT NULL,
   PRIMARY KEY (`tid`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=3 ;
-
---
--- Dumping data for table `task`
---
-
-INSERT INTO `task` (`tid`, `gid`, `date`, `created_at`, `description`, `done`) VALUES
-(1, 1, 1425736880, 1425736880, 'new task', 1);
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=5 ;
 
 -- --------------------------------------------------------
 
@@ -107,16 +84,6 @@ CREATE TABLE IF NOT EXISTS `user` (
   `name` varchar(300) NOT NULL,
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`uid`, `email`, `pass`, `name`) VALUES
-(1, 'djdeepalijain811@gmail.com', 'pass', 'deepali'),
-(2, 'new@gmail.com', 'passnew', 'saxax'),
-(3, 'abs@gmail.com', 'abs', 'nmas'),
-(5, '', '', '');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
