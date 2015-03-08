@@ -597,3 +597,15 @@ input[type="file"]{
 	border-radius: 0px 50px 50px 0px;
 	margin-right: 10px;
 }
+
+.pos {
+	padding: 0px 60px;
+	background-color: #779C98;
+	display: inline;
+}
+
+.neg {
+	padding: 0px 40px;
+	background-color: #C7DFD8;
+	display: inline;
+}
