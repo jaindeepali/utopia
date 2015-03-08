@@ -581,3 +581,7 @@ input[type="file"]{
 	background-color: #F7F7F7;
 	padding-top: 0px;
 }
+
+.graph-content {
+	text-align: center;
+}
