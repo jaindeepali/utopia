@@ -163,6 +163,21 @@
 			}
 		}
 
+		public function add_task($task,$gid){
+			global $link;
+			$time = time();
+			$sql = "INSERT INTO task (description, date, gid, created_at) VALUES ('".$task['description']."', ".$task['date'].", $gid, $time)";
+			$result = mysqli_query($link, $sql);
+			if(!$result)
+			{
+				echo "Could not run query successfully.".mysqli_error($link);
+			}
+			else
+			{
+				echo "success";
+			}
+		}
+
 		public function add_ques($gid, $ques){
 			global $link;
 			$date = time();

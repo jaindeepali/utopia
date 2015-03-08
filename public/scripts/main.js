@@ -1,4 +1,4 @@
-$(document).ready(function(){
+	$(document).ready(function(){
 
 	$('.notification').delay(10000).fadeOut();
 
@@ -23,6 +23,37 @@ $(document).ready(function(){
 		//$(this).addClass('span2').removeClass('span4');
 		$(this).toggleClass('span4 span2');
 		$('.acc_list').toggleClass('hide');
+	});
+
+	$('#add_task').click(function(){
+		var desc = $('#new_task_desc').val();
+		var date = $('#date').val();
+		var month = $('#month').val();
+		var year = $('#year').val();
+		var gid = $(this).attr('data-id');
+		$.ajax({
+			type: 'POST',
+			url: "/add_task/"+gid,
+			datatype: "text",
+			data: {
+          		description: desc,
+        		date: date,
+        		month: month,
+        		year: year
+      		},
+			success: function(response){
+				console.log(response);
+			},
+			error: function(){
+				console.log("something has gone wrong");
+		  }
+		});
+		$('#new_task_desc').val('');
+		$('#date').val('');
+		$('#month').val('');
+		$('#year').val('');
+		var html = "<td>"+desc+"</td><td>"+date+"/"+month+"/"+year+"</td><td><i class='fa fa-square-o'></i></td>";
+		$('#new_task').html(html);
 	});
 });
 
@@ -54,3 +85,4 @@ $(function() {
 			$('#ds').toggleClass('down');
 		})
 	});
+

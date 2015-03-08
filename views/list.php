@@ -20,7 +20,5 @@
 			</tr>
 			<?php endforeach; ?>
 		</table>
-		<a href="/make_list/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Make to-do list for tomorrow</button></a>
-		<a href="/questionnaire/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Fill today's questionnaire</button></a><br>
 	</div>
 </div>

@@ -119,9 +119,19 @@
 		{
 			$goal = array();
 			$goal['description'] = mysql_escape_string($_POST['description']);
-			$goal['deadline'] = mysql_escape_string(strtotime($_POST['deadline']));
+			$goal['deadline'] = mysql_escape_string(strtotime($_POST['date'].'-'.$_POST['month'].'-'.$_POST['year']));
 			$ob = new model();
 			$ob->add_goal($goal);	
+		}
+
+		public function add_task($gid)
+		{
+			var_dump($_POST);
+			$goal = array();
+			$goal['description'] = mysql_escape_string($_POST['description']);
+			$goal['date'] = mysql_escape_string(strtotime($_POST['date'].'-'.$_POST['month'].'-'.$_POST['year']));
+			$ob = new model();
+			$ob->add_task($goal,$gid);
 		}
 
 		public function validate_user()

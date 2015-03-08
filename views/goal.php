@@ -19,8 +19,15 @@
 				<td><i class="fa fa-square-o"></i></td>
 			</tr>
 			<?php endforeach; ?>
+			<tr id="new_task"></tr>
+			<tr>
+				<td><input class="long-input" type="text" id="new_task_desc"></td>
+				<td><input class="short-input" type="text" id="date">/
+					<input class="short-input" type="text" id="month">/
+					<input class="short-input" type="text" id="year"></td>
+				<td><button id = "add_task" class="btn" style="height:40px" data-id="<?php echo $data['gid'];?>">Add Task</button></td>
+			</tr>
 		</table>
-		<a href="/make_list/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Make to-do list for tomorrow</button></a>
 		<a href="/questionnaire/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Fill today's questionnaire</button></a><br>
 	</div>
 </div>

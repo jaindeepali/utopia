@@ -243,6 +243,10 @@ a:hover,a:focus,a:active{
 
 select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
 	border-radius: 0px;
+	border-color: #F5F5F5;
+	border-bottom-color: #D5D5D5;
+	vertical-align: middle;
+	margin-bottom: 0px;
 }
 
 .btn {
@@ -552,7 +556,7 @@ input[type="file"]{
 }
 
 .short-input {
-	width: 50px;
+	width: 30px;
 }
 
 .long-input {
