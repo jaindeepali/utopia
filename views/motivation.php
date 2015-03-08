@@ -47,6 +47,12 @@
 				<i class="fa fa-thumbs-up"></i> : 1<br/>
 				Added on: 08/03/2105<br/><br>
 			</div>
+			<div class="hero-unit item">
+				<a href='/' height:'150px' width:'150px'><img src='/public/images/maths.jpg'></a><br><br>
+				<b>Motivational story 8</b><br>
+				<i class="fa fa-thumbs-up"></i> : 1<br/>
+				Added on: 08/03/2105<br/><br>
+			</div>
 		</div>
 		<a href="/post_story"><button class="btn"style="height: 40px;"><i class="fa fa-edit"></i> &nbsp;Post a story</button></a>
 	</div>
