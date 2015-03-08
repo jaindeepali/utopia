@@ -179,22 +179,46 @@
 
 		public function post_story()
 		{
-			return render('post_story.php');	
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				return render('post_story.php');
+			}
 		}
 
 		public function mystories()
 		{
-			return render('mystories.php');
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				return render('mystories.php');
+			}
 		}
 
 		public function insights()
 		{
-			return render('insights.php');
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				return render('insights.php');
+			}
 		}
 
 		public function recommendations()
 		{
-			return render('recommendations.php');
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				return render('recommendations.php');
+			}
 		}
 
 		public function about()
