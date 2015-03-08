@@ -1,6 +1,7 @@
 <div class="container">
 	<div class="row-fluid header">
 		<h2>Performance Analysis</h2>
+		Prototype using demo data
 	</div>
 	<br/><br/><br/><br/>
 	<div class="row-fluid content graph-content">
@@ -17,13 +18,6 @@
 		</div>
 		<div class="row-fluid">
 			<br><br><br><br>
-			<center><h4>Relative hours spent on the goals in the last week</h4></center><br>
-			<center><div style="width:45%;">
-				<canvas id="chart-area" style="height:300px;"></canvas>
-			</div></center>
-		</div>
-		<div class="row-fluid">
-			<br><br><br><br>
 			<center><h4>Planned vs. actual time spent on the goal daily</h4></center><br><br>
 			<center><div id="bar-chart-legend">
 				<span style="background-color:rgba(220,220,220,0.5);padding:10px;margin:10px;">Planned Time</span>&nbsp;
@@ -37,6 +31,13 @@
 				Goal #2:
 				<canvas id="bar-chart-area2" style="height:300px;"></canvas>
 			</div>
+		</div>
+		<div class="row-fluid">
+			<br><br><br><br>
+			<center><h4>Relative hours spent on the goals in the last week</h4></center><br>
+			<center><div style="width:45%;">
+				<canvas id="chart-area" style="height:300px;"></canvas>
+			</div></center>
 		</div>
 	</div>
 </div>

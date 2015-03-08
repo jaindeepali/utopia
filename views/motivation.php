@@ -1,6 +1,7 @@
 <div class="container">
 	<div class="row-fluid header" style="margin-top:2%">
 		<h2>Motivational Stories</h2>
+		Prototype using demo data
 	</div>
 	<div class="row-fluid content home-content" style="margin-top:-1.5%">
 		<div class="grid" style="width:1000px">

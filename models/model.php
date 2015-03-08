@@ -130,7 +130,7 @@
 
 		public function get_tasks_by_uid($uid){
 			global $link;
-			$sql = "SELECT tid,goal.gid,date,task.description as tdesc,done,goal.description as gdesc FROM task, goal WHERE goal.gid = task.gid AND goal.uid = $uid";
+			$sql = "SELECT tid,goal.gid,date,task.description as tdesc,done,goal.description as gdesc FROM task, goal WHERE goal.gid = task.gid AND goal.uid = $uid ORDER BY task.date";
 			$result = mysqli_query($link, $sql);
 			if(!$result)
 			{
