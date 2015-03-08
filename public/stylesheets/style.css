@@ -23,7 +23,7 @@ body
 	background-attachment: fixed;
 	color: #2c3e50;
 	/* margin-right: 40px; */
-	background-color: #ecf0f1;
+	background-color: #DFDFDF;
 	/* text-shadow: 0 0 2px rgba(151, 151, 151, 0.5); */
 	overflow-x: hidden;
 }
@@ -578,6 +578,6 @@ input[type="file"]{
 
 .home-content {
 	text-align: center;
-	background-color: #DBDBDB;
+	background-color: #F7F7F7;
 	padding-top: 0px;
 }
