@@ -585,3 +585,7 @@ input[type="file"]{
 .graph-content {
 	text-align: center;
 }
+
+.hint, [data-hint] {
+ display: block;
+}

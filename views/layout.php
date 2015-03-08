@@ -35,12 +35,13 @@ global $loggedInUser;
 			<div class="row-fluid main-container">
 				<div class="span1">
 					<ul class="nav">
-						<li><div class="wrapper-dropdown-2"><a href="/"><i class="fa fa-home fa-lg"></i></a></div></li>
-						<li><div class="wrapper-dropdown-2"><a href="/myprofile"><i class="fa fa-user fa-lg"></i></a></div></li>
-						<li><div class="wrapper-dropdown-2"><a href="/goals"><i class="fa fa-trophy fa-lg"></i></a></div></li>
-						<li><div class="wrapper-dropdown-2"><a href="/list"><i class="fa fa-list fa-lg"></i></a></div></li>
-						<li><div class="wrapper-dropdown-2"><a href="/graph"><i class="fa fa-bar-chart-o fa-lg"></i></a></div></li>
-						<li><div class="wrapper-dropdown-2"><a href="/motivation">&nbsp; <i class="fa fa-lightbulb-o fa-lg"></i></a></div></li>
+						<li class="hint--right" data-hint="Home"><div class="wrapper-dropdown-2"><a href="/"><i class="fa fa-home fa-lg"></i></a></div></li>
+						<li class="hint--right" data-hint="My profile"><div class="wrapper-dropdown-2"><a href="/myprofile"><i class="fa fa-user fa-lg"></i></a></div></li>
+						<li class="hint--right" data-hint="My Goals"><div class="wrapper-dropdown-2"><a href="/goals"><i class="fa fa-trophy fa-lg"></i></a></div></li>
+						<li class="hint--right" data-hint="To-do List"><div class="wrapper-dropdown-2"><a href="/list"><i class="fa fa-list fa-lg"></i></a></div></li>
+						<li class="hint--right" data-hint="Analysis"><div class="wrapper-dropdown-2"><a href="/graph"><i class="fa fa-bar-chart-o fa-lg"></i></a></div></li>
+						<li class="hint--right" data-hint="Motivational Stories"><div class="wrapper-dropdown-2"><a href="/motivation">&nbsp; <i class="fa fa-lightbulb-o fa-lg"></i></a></div></li>
+						<li class="hint--right" data-hint="My Stories"><div class="wrapper-dropdown-2"><a href="/mystories"> <i class="fa fa-pencil-square-o fa-lg"></i></a></div></li>
 					</ul>
 				</div>
 				<div class="span11">

@@ -8,7 +8,7 @@
 			<div class="control-group">
 				<label class="control-label">What did you do today for this goal?</label>
 				<div class="controls">
-					<textarea cols="25" rows="5" name="work_summary"></textarea><br>
+					<textarea cols="50" rows="5" name="work_summary"></textarea><br>
 				</div>
 			</div>
 			<div class="control-group">

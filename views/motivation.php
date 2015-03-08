@@ -47,7 +47,7 @@
 				Added on: 08/03/2105<br/><br>
 			</div>
 		</div>
-		<button class="btn"style="height: 40px;"><i class="fa fa-edit"></i> &nbsp;Post a story</button>
+		<a href="/post_story"><button class="btn"style="height: 40px;"><i class="fa fa-edit"></i> &nbsp;Post a story</button></a>
 	</div>
 </div>
 

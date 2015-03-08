@@ -176,5 +176,15 @@
 		{
 			return render('story'.$sid.'.php');
 		}
+
+		public function post_story()
+		{
+			return render('post_story.php');	
+		}
+
+		public function mystories()
+		{
+			return render('mystories.php');
+		}
 	}
 ?>
