@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row-fluid header banner" style="margin-top:2%">
-		<div class="span4 glow">
+		<div class="span3 glow">
 			<a href="/motivation">
 				<span>
 				  <img src="/public/images/rainbow.png">
@@ -8,20 +8,28 @@
 				<h2>Motivation</h2>
 			</a><br>
 		</div>
-		<div class="span4 glow">
+		<div class="span3 glow">
 			<a href="/goals">
 				<span>
-				  <img src="/public/images/eye.png">
+				  <img src="/public/images/trophy.png">
 				</span><br/>
 				<h2>Introspection</h2>
 			</a><br/>
 		</div>
-		<div class="span4 glow">
+		<div class="span3 glow">
 			<a href="/graph">
 				<span>
 					<img src="/public/images/barchart.png">
 				</span><br/>
 				<h2>Analysis</h2>
+			</a><br/>
+		</div>
+		<div class="span3 glow">
+			<a href="/insights">
+				<span>
+					<img src="/public/images/eye.png">
+				</span><br/>
+				<h2>Insight</h2>
 			</a><br/>
 		</div>
 	</div>

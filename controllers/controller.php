@@ -186,5 +186,10 @@
 		{
 			return render('mystories.php');
 		}
+
+		public function insights()
+		{
+			return render('mystories.php');
+		}
 	}
 ?>
