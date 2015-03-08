@@ -548,7 +548,7 @@ input[type="file"]{
 
 .login-btn {
 	position: relative;
-	right: -84.5%;
+	right: -77%;
 }
 
 .short-input {
@@ -561,4 +561,15 @@ input[type="file"]{
 
 .subtitle {
 	font-family: 'Lato_Regular';
+}
+
+.logo-img {
+	height: 45px;
+}
+
+.app-name {
+	margin-left: 10px;
+	font-size: 24px;
+	vertical-align: middle;
+	color: #c0392b;
 }

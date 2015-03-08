@@ -19,7 +19,8 @@ global $loggedInUser;
 	<body>
 		<div class="container-fluid">
 			<div class="row-fluid topbar">
-				LOGO
+				<a href="/"><img src="/public/images/logo.png" class="logo-img">
+				<span class = 'app-name'>Utopia</span></a>
 				<span class = 'login-btn'>
 					<?php
 					if(!$loggedInUser):
