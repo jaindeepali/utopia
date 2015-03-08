@@ -33,14 +33,17 @@
 			</a><br/>
 		</div>
 	</div>
-	<div class="row-fluid content home-content" style="margin-top:-1.5%">
-		<h4>Always stay motivated and focused!</h4>
+	<div class="row-fluid content" style="margin-top:-1.5%;text-align:center;">
+		<h4>Staying committed to goals made easy.</h4>
+		<b style="font-size:24px">"</b> &nbsp;&nbsp;Productivity is never an accident. It is always the result of a commitment to excellence, intelligent planning, and focused effort.&nbsp;&nbsp; <b style="font-size:24px">"</b> &nbsp;&nbsp;&nbsp;&nbsp;- Paul J. Meyer
 		<?php
 			global $loggedInUser;
 			if(!$loggedInUser):
 		?>
 		<a href = "/login"><button class="btn" style="height: 40px;">Join Now!</button></a>
 		<?php endif; ?>
+	</div>
+	<div class="row-fluid content home-content" style="margin-top:-1.5%">
 		<div class="grid" style="width:1000px">
 			<div class="hero-unit item">
 				<a href='/story/1' height:'150px' width:'150px'><img src='/public/images/motivation.jpg'></a><br><br>
