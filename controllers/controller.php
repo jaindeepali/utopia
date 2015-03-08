@@ -169,5 +169,10 @@
 		{
 			return render('motivation.php');
 		}
+
+		public function story($sid)
+		{
+			return render('story'.$sid.'.php');
+		}
 	}
 ?>

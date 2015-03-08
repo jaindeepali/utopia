@@ -50,6 +50,7 @@ dispatch_post('/submit_questionnaire/:gid',array($cont_ob,'submit_questionnaire'
 dispatch_post('/add_task/:gid',array($cont_ob,'add_task'));
 dispatch('/graph',array($cont_ob,'graph'));
 dispatch('/motivation',array($cont_ob,'motivation'));
+dispatch('/story/:sid',array($cont_ob,'story'));
 
 /*Starting application*/
 run();
