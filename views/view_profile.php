@@ -14,6 +14,6 @@
 				<td style="text-align:left"><?php echo $data['email']; ?></td>
 			</tr>
 		</table>
-		<a href="/edit_profile"><button class="btn"style="height: 40px;">Edit</button></a>
+		<center><a href="/edit_profile"><button class="btn"style="height: 40px;">Edit</button></a></center>	
 	</div>
 </div>

@@ -154,5 +154,20 @@
 			$ob->add_ques($gid, $_POST);
 		}
 
+		public function graph()
+		{
+			global $loggedInUser;
+			if(!$loggedInUser){
+				header('Location:/login');
+			}
+			else{
+				return render('graph.php');
+			}
+		}
+
+		public function motivation()
+		{
+			return render('motivation.php');
+		}
 	}
 ?>

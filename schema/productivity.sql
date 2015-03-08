@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Mar 08, 2015 at 06:37 AM
+-- Generation Time: Mar 08, 2015 at 09:59 AM
 -- Server version: 5.5.34-0ubuntu0.13.04.1
 -- PHP Version: 5.4.9-4ubuntu2.4
 
@@ -82,6 +82,8 @@ CREATE TABLE IF NOT EXISTS `user` (
   `email` varchar(300) NOT NULL,
   `pass` varchar(300) NOT NULL,
   `name` varchar(300) NOT NULL,
+  `occupation` varchar(300) NOT NULL,
+  `interests` varchar(300) NOT NULL,
   PRIMARY KEY (`uid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
 

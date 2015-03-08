@@ -11,11 +11,13 @@ A web app to help you achieve your goals by making you fill an introspective que
 5. Fill introspection questionnaire for each goal everyday
 6. Get email notifications for filling the questionnaire
 7. See your progress in form of informative charts and graphs
+8. View and post top motivational stories.
 
 ##Tech. Used
 
 1. PHP MVC framework - Limonade
 2. Frontend - Twitter Bootstrap, jquery, font-awesome, masonry.js, chart.js
+3. Version control - Git
 
 ##Setup:
 

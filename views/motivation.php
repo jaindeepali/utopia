@@ -1,38 +1,8 @@
 <div class="container">
-	<div class="row-fluid header banner" style="margin-top:2%">
-		<div class="span4 glow">
-			<a href="/motivation">
-				<span>
-				  <img src="/public/images/rainbow.png">
-				</span><br/>
-				<h2>Motivation</h2>
-			</a><br>
-		</div>
-		<div class="span4 glow">
-			<a href="/goals">
-				<span>
-				  <img src="/public/images/eye.png">
-				</span><br/>
-				<h2>Introspection</h2>
-			</a><br/>
-		</div>
-		<div class="span4 glow">
-			<a href="/graph">
-				<span>
-					<img src="/public/images/barchart.png">
-				</span><br/>
-				<h2>Analysis</h2>
-			</a><br/>
-		</div>
+	<div class="row-fluid header" style="margin-top:2%">
+		<h2>Motivational Stories</h2>
 	</div>
 	<div class="row-fluid content home-content" style="margin-top:-1.5%">
-		<h4>Always stay motivated and focused!</h4>
-		<?php
-			global $loggedInUser;
-			if(!$loggedInUser):
-		?>
-		<a href = "/login"><button class="btn" style="height: 40px;">Join Now!</button></a>
-		<?php endif; ?>
 		<div class="grid" style="width:1000px">
 			<div class="hero-unit item">
 				<a href='/' height:'150px' width:'150px'><img src='/public/images/motivation.jpg'></a><br><br>
@@ -77,6 +47,7 @@
 				Added on: 08/03/2105<br/><br>
 			</div>
 		</div>
+		<button class="btn"style="height: 40px;"><i class="fa fa-edit"></i> &nbsp;Post a story</button>
 	</div>
 </div>
 

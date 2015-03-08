@@ -28,6 +28,6 @@
 				<td><button id = "add_task" class="btn" style="height:40px" data-id="<?php echo $data['gid'];?>">Add Task</button></td>
 			</tr>
 		</table>
-		<a href="/questionnaire/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Fill today's questionnaire</button></a><br>
+		<center><a href="/questionnaire/<?php echo $data['gid'];?>"><button class="btn" style="height:40px">Fill today's questionnaire</button></a><br></center>
 	</div>
 </div>

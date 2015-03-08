@@ -13,6 +13,7 @@ global $loggedInUser;
 		<link rel="stylesheet" type="text/css" href="/public/font-awesome/css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="/public/stylesheets/hint.min.css">
 		<link rel="stylesheet" type="text/css" href="/public/stylesheets/style.css"> 
+		<link rel="icon" href="/public/images/logo_small.png" type="image/ico">
 		<script>window.jQuery||document.write('<script src="/public/scripts/jquery-1.9.1.min.js"><\/script>')</script>
 		<script type="text/javascript" src="/public/js/modernizr.custom.79639.js"></script> 
 	</head>
@@ -39,6 +40,7 @@ global $loggedInUser;
 						<li><div class="wrapper-dropdown-2"><a href="/goals"><i class="fa fa-trophy fa-lg"></i></a></div></li>
 						<li><div class="wrapper-dropdown-2"><a href="/list"><i class="fa fa-list fa-lg"></i></a></div></li>
 						<li><div class="wrapper-dropdown-2"><a href="/graph"><i class="fa fa-bar-chart-o fa-lg"></i></a></div></li>
+						<li><div class="wrapper-dropdown-2"><a href="/motivation">&nbsp; <i class="fa fa-lightbulb-o fa-lg"></i></a></div></li>
 					</ul>
 				</div>
 				<div class="span11">
@@ -49,5 +51,6 @@ global $loggedInUser;
 		</div>
 		<script type="text/javascript" src="/public/scripts/main.js"></script>
 		<script type="text/javascript" src="/public/scripts/jquery.masonry.min.js"></script>
+		<script type="text/javascript" src="/public/scripts/Chart.js"></script>
 	</body>
 </html>
